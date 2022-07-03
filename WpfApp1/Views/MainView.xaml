@@ -1,0 +1,220 @@
+﻿<Window x:Class="WpfApp1.Views.MainView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+      Background="White"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      ResizeMode="CanMinimize"
+        Title="Gorev Yoneticisi" Height="950" Width="1100">
+    <Grid>
+
+        <Grid.RowDefinitions>
+
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+
+        </Grid.RowDefinitions>
+
+
+        <StackPanel Orientation="Vertical" Grid.Row="0">
+
+            <StackPanel Height="20" Margin="0,0,0,0"  Orientation="Horizontal">
+
+                <TextBlock Text="Dosya"  Foreground="Gray" Margin="8,0,10,0"></TextBlock>
+                <TextBlock Text="Secenekler"   Foreground="Gray"  Margin="0,0,10,0"></TextBlock>
+                <TextBlock Text="Goruntuler" Foreground="Gray"  ></TextBlock>
+
+            </StackPanel>
+
+            <StackPanel Margin="0,5,0,0">
+
+                <Border Height="1" Background="LightGray" />
+
+            </StackPanel>
+
+            <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Margin="0,5,0,0">
+
+                <Border Background="White" BorderThickness="0,1,1,0" BorderBrush="Gray" Height="25" Width="55">
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="Islemler"></TextBlock>
+                </Border>
+
+                <Border Background="LightGray" BorderThickness="0,1,1,0" Margin="0,3,0,0" BorderBrush="Gray" Height="22" Width="70">
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="Performans"></TextBlock>
+                </Border>
+
+                <Border Background="LightGray" BorderThickness="0,1,1,0" Margin="0,3,0,0" BorderBrush="Gray" Height="22" Width="110">
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="Uygulama gecmisi"></TextBlock>
+                </Border>
+
+                <Border Background="LightGray" BorderThickness="0,1,1,0" Margin="0,3,0,0" BorderBrush="Gray" Height="22" Width="60">
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="Baslangic"></TextBlock>
+                </Border>
+
+                <Border Background="LightGray" BorderThickness="0,1,1,0" Margin="0,3,0,0" BorderBrush="Gray" Height="22" Width="70">
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="Kullanicilar"></TextBlock>
+                </Border>
+
+                <Border Background="LightGray" BorderThickness="0,1,1,0" Margin="0,3,0,0" BorderBrush="Gray" Height="22" Width="70">
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="Ayrintilar"></TextBlock>
+                </Border>
+
+                <Border Background="LightGray" BorderThickness="0,1,1,0" Margin="0,3,0,0" BorderBrush="Gray" Height="22" Width="70">
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="Hizmetler"></TextBlock>
+                </Border>
+
+
+            </StackPanel>
+
+            <StackPanel Margin="54 ,0,0,0">
+
+                <Border Height="1" Background="Gray" />
+
+            </StackPanel>
+
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Grid.Row="1">
+
+            <Border Background="White" BorderThickness="0,0,1,1" Margin="0,3,0,0" BorderBrush="Gray" Height="56" Width="234">
+                <TextBlock VerticalAlignment="Bottom" Foreground="CadetBlue" Margin="5,0,0,5" HorizontalAlignment="Left" Text="Name"></TextBlock>
+            </Border>
+
+            <Border Background="White" BorderThickness="0,0,1,1" Margin="0,3,0,0" BorderBrush="Gray" Height="56" Width="110">
+                <TextBlock VerticalAlignment="Bottom" Foreground="CadetBlue" Margin="5,0,0,5" HorizontalAlignment="Left" Text="Machine name"></TextBlock>
+            </Border>
+
+            <Border Background="White" BorderThickness="0,0,1,1" Margin="0,3,0,0" BorderBrush="Gray" Height="56" Width="90">
+                <StackPanel VerticalAlignment="Bottom"  HorizontalAlignment="Left">
+                    <TextBlock Foreground="CadetBlue" Margin="7,0,5,5" Text="Handle count"></TextBlock>
+                </StackPanel>
+            </Border>
+
+            <Border Background="White" BorderThickness="0,0,1,1" Margin="0,3,0,0" BorderBrush="Gray" Height="56" Width="90">
+                <StackPanel VerticalAlignment="Bottom"  HorizontalAlignment="Left">
+                    <TextBlock Foreground="CadetBlue" Margin="7,0,5,5" Text="Theard count"></TextBlock>
+                </StackPanel>
+            </Border>
+
+            <Border Background="White" BorderThickness="0,0,1,1" Margin="0,3,0,0" BorderBrush="Gray" Height="56" Width="80">
+                <StackPanel VerticalAlignment="Bottom"  HorizontalAlignment="Right">
+                    <TextBlock Foreground="Black" FontSize="15" Margin="8,0,5,5" Text="%0"></TextBlock>
+                    <TextBlock Foreground="CadetBlue" Margin="7,0,5,5" Text="Disk"></TextBlock>
+                </StackPanel>
+            </Border>
+
+            <Border Background="White" BorderThickness="0,0,1,1" Margin="0,3,0,0" BorderBrush="Gray" Height="56" Width="80">
+                <StackPanel VerticalAlignment="Bottom"  HorizontalAlignment="Right">
+                    <TextBlock Foreground="Black" FontSize="15" Margin="4,0,5,5" Text="%0"></TextBlock>
+                    <TextBlock Foreground="CadetBlue" Margin="7,0,5,5" Text="Ag"></TextBlock>
+                </StackPanel>
+            </Border>
+
+
+
+            <Border Background="White" BorderThickness="0,0,1,1" Margin="0,3,0,0" BorderBrush="Gray" Height="56" Width="80">
+                <StackPanel VerticalAlignment="Bottom"  HorizontalAlignment="Right">
+                    <TextBlock Foreground="Black" FontSize="15" Margin="7,0,5,5" Text="%0"></TextBlock>
+                    <TextBlock Foreground="CadetBlue" Margin="7,0,5,5" Text="GPU"></TextBlock>
+                </StackPanel>
+            </Border>
+
+            <Border Background="White" BorderThickness="0,0,1,1" Margin="0,3,0,0" BorderBrush="Gray" Height="56" Width="120">
+                <StackPanel VerticalAlignment="Bottom"  HorizontalAlignment="Left">
+                    <TextBlock Foreground="CadetBlue" Margin="7,0,5,5" Text="GPU Altyapisi"></TextBlock>
+                </StackPanel>
+            </Border>
+
+
+            <Border Background="White" BorderThickness="0,0,1,1" Margin="0,3,0,0" BorderBrush="Gray" Height="56" Width="100">
+                <StackPanel VerticalAlignment="Bottom"  HorizontalAlignment="Right">
+                    <TextBlock Foreground="CadetBlue" Margin="7,0,5,5" Text="Guc Kullanimi"></TextBlock>
+                </StackPanel>
+            </Border>
+
+            <Border Background="White" BorderThickness="0,0,1,1" Margin="0,3,0,0" BorderBrush="Gray" Height="56" Width="105">
+                <StackPanel VerticalAlignment="Bottom"  HorizontalAlignment="Right">
+                    <TextBlock Foreground="CadetBlue" Margin="7,0,5,5" Text="Guc Kullanimi..."></TextBlock>
+                </StackPanel>
+            </Border>
+
+
+        </StackPanel>
+
+        <StackPanel Grid.Row="2">
+
+            <TextBlock Text="Uygulamalar (0)" Margin="10,20,0,0" FontSize="20" Foreground="CornflowerBlue"></TextBlock>
+            
+        </StackPanel>
+
+        <DataGrid  Margin="0,42,0,0"  SelectedItem="{Binding Slcprocess, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" ItemsSource="{Binding processes, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" AutoGenerateColumns="False" Background="Transparent" Name="lst" Grid.Row="2" Grid.RowSpan="12">
+
+            <DataGrid.Columns>
+                <DataGridTextColumn Width="220" Binding="{Binding ProcessName ,UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"></DataGridTextColumn>
+                <DataGridTextColumn Width="120" Binding="{Binding MachineName,UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"></DataGridTextColumn>
+                <DataGridTextColumn Width="80" Binding="{Binding HandleCount,UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"></DataGridTextColumn>
+                <DataGridTextColumn Width="150" Binding="{Binding Threads.Count,UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"></DataGridTextColumn>
+            </DataGrid.Columns>
+            
+        </DataGrid>
+
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="14" Orientation="Horizontal">
+
+            <TextBox
+                Text="{Binding start, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+                Margin="10,0,0,0"
+                    Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                    VerticalAlignment="Top"
+                    Height="50"
+                Width="200"
+                    AcceptsReturn="True"
+                    TextWrapping="Wrap"
+                    VerticalScrollBarVisibility="Auto"
+                    materialDesign:HintAssist.Hint="Process Name"
+                    IsEnabled="{Binding Path=IsChecked, ElementName=MaterialDesignOutlinedTextBoxEnabledComboBox}">
+
+            </TextBox>
+
+            <Button
+                Width="120"
+                Height="30"
+                Command="{Binding EndCommand}" 
+                    Style="{StaticResource MaterialDesignOutlinedButton}"
+                  materialDesign:ButtonProgressAssist.IsIndicatorVisible="True"
+                  materialDesign:ButtonProgressAssist.IsIndeterminate="True"
+                  Content="End Task"
+                    
+                  Margin="720,0,-720,0"
+                  IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" />
+
+            <Button
+                Width="120"
+                Height="30"
+                    Style="{StaticResource MaterialDesignOutlinedButton}"
+                  materialDesign:ButtonProgressAssist.IsIndicatorVisible="True"
+                  materialDesign:ButtonProgressAssist.IsIndeterminate="True"
+                  Content="Start Task"
+                    Command="{Binding StartCommand}" 
+                  Margin="450,0,-450,0"
+                  IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" />
+
+            
+        </StackPanel>
+
+    </Grid>
+</Window>
